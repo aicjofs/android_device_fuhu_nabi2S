@@ -1,0 +1,75 @@
+#
+# from device/nvidia/cardhu/system.prop
+#
+ro.opengles.version = 131072
+wifi.interface=wlan0
+ap.interface=wlan0
+persist.tegra.nvmmlite = 1
+ro.sf.override_null_lcd_density = 1
+
+keyguard.no_require_sim=true
+
+#NFC
+debug.nfc.fw_download=false
+debug.nfc.se=false
+
+ro.sf.lcd_density=213
+
+#support dynamic resolution change property
+ro.streaming.video.drs=true
+ro.ril.wake_lock_timeout=200000
+ro.zygote.disable_gl_preload=true
+
+### NXD+
+
+
+# HDMI for N2S active cable
+persist.tegra.hdmi.resolution=720p
+
+#OTA
+persist.sys.ota = 0
+
+#Balanced Power Mode
+#persist.sys.NV_FPSLIMIT=0
+### NXD-
+### N2S Need rotate from portrait to landscape
+ro.sf.hwrotation = 270
+persist.tegra.panel.rotation = 180
+### N2S Need rotate from portrait to landscape
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+ro.fuhu.product.country_id=US
+ro.fuhu.product.device_edition=SNB02-NV7A-US
+ro.fuhu.product.version=2.0.8
+ro.fuhu.product.gms=1
+persist.sys.nabi.default_parent=true
+persist.sys.nabi.apk.installed=0
+persist.sys.nabi.demo.process=0
+ro.com.android.dateformat=MM-dd-yyyy
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.notification_sound=pixiedust.ogg
+ro.carrier=unknown
+ro.config.alarm_alert=Alarm_Classic.ogg
+ro.setupwizard.mode=OPTIONAL
+ro.com.google.gmsversion=4.4_r5
+ro.com.google.clientidbase.am=android-foxconn
+ro.com.google.clientidbase.gmm=android-foxconn
+ro.com.google.clientidbase.ms=android-foxconn
+ro.com.google.clientidbase.yt=android-foxconn
+ro.com.google.clientidbase=android-foxconn
+drm.service.enabled=true
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=64m
+dalvik.vm.heapsize=384m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+ro.product.sell_cid=US
+ro.fuhu.project_name=SNB02-NV7A-US
+persist.sys.dalvik.vm.lib=libdvm.so
+dalvik.vm.dexopt-flags=m=y
+net.bt.name=Android
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+tf.enable=y
